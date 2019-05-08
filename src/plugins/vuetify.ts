@@ -16,4 +16,4 @@ Vue.use(Vuetify, {
     customProperties: true
   },
   iconfont: 'fa',
-})
+});
