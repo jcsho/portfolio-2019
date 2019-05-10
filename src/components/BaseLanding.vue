@@ -1,9 +1,7 @@
 <template>
-    <v-container>
-        <v-layout align-center justify-center row>
-            <h1>{{ tagline }}</h1>
-        </v-layout>
-    </v-container>
+  <section class="landing">
+    <h1 class="landing__tagline">{{ tagline }}</h1>
+  </section>
 </template>
 
 <script lang="ts">
@@ -12,13 +10,22 @@ import { Component, Prop } from 'vue-property-decorator';
 
 @Component
 export default class BaseLanding extends Vue {
-
-    @Prop({ default: 'Welcome to my site' })
-    public tagline !: string;
-
+  @Prop()
+  public tagline!: string;
 }
 </script>
 
-<style>
+<style lang="scss">
+.landing {
+  display: flex;
+  width: 100vw;
+  height: 70vh;
+  justify-content: center;
+  align-items: center;
 
+  &__tagline {
+    margin: 0;
+    font-size: 4em;
+  }
+}
 </style>
