@@ -22,9 +22,10 @@ export default class App extends Vue {}
 
 <style lang="scss">
 :root {
-  --primary-color: #67c5c2;
+  --primary-color: #00e5ff;
+  --teal-color: #67c5c2;
   --secondary-color: #9f9f9f;
-  --dark-mode-bg: #3a5169;
+  --dark-mode-bg: #607d8b;
   --dark-mode-text: #fff;
 }
 

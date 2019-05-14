@@ -1,6 +1,8 @@
 <template>
     <nav class="nav">
-        <h1 class="nav__logo">Justin Ho</h1>
+        <router-link :to="{ name: 'home' }">
+            <h1 class="nav__logo">Justin Ho</h1>
+        </router-link>
 
         <ul class="nav__list">
             <li
@@ -64,6 +66,7 @@ export default class NavBar extends Vue {
     &__logo {
         margin: 0;
         font-size: 2em;
+        color: var(--primary-color);
     }
 
     &__list {
