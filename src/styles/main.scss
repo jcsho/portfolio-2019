@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #00e5ff;
+  --teal-color: #67c5c2;
+  --secondary-color: #9f9f9f;
+  --dark-mode-bg: #607d8b;
+  --dark-mode-text: #fff;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Quicksand", sans-serif;
+  color: var(--dark-mode-text);
+  background-color: var(--dark-mode-bg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-mode-text);
+}
+
+h1 {
+    margin: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}

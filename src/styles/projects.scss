@@ -1,0 +1,34 @@
+.project {
+  padding: 10vh 25vw;
+  line-height: 2rem;
+
+  &__landing {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__title {
+    margin: 0 2rem;
+    font-size: 3rem;
+    letter-spacing: 0.8rem;
+  }
+
+  &__heading {
+    margin: 2.5rem 0 1rem 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &__subheading {
+    margin: 1rem 0 0 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  &__text {
+    margin: 0 2rem;
+    letter-spacing: 0.1rem;
+  }
+}

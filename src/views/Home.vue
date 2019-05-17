@@ -1,6 +1,6 @@
 <template>
-  <main>
-    <BaseLanding tagline="Ideate. Design. Create" />
+  <section>
+    <BaseLanding />
     <BaseCard 
       v-for="project in projects" 
       :key="project.id" 
@@ -8,7 +8,7 @@
       :icon="project.icon"
       :title="project.name"
     />
-  </main>
+  </section>
 </template>
 
 <script lang="ts">
@@ -33,17 +33,17 @@ type Project = {
 export default class Home extends Vue {
   private projects: Project[] = [
     {
-      link: { name: 'projects', params: { projectname: 'mesh'}},
-      icon: 'fas fa-dice-d6',
+      link: { name: 'mesh'},
+      icon: 'fas fa-layer-group',
       name: 'Mesh'
     },
     {
-      link: { name: 'projects', params: { projectname: 'hype-tracker'}},
+      link: { name: 'hypetracker'},
       icon: 'fas fa-database',
       name: 'HypeTracker'
     },
     {
-      link: { name: 'projects', params: { projectname: 'virtually-saving-lives'}},
+      link: { name: 'virtuallysavinglives'},
       icon: 'fas fa-vr-cardboard',
       name: 'Virtually Saving Lives'
     },

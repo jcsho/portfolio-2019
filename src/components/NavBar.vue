@@ -55,17 +55,17 @@ export default class NavBar extends Vue {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 8em;
+    padding: 3rem 8rem;
 
     &__logo {
         margin: 0;
-        font-size: 2em;
+        font-size: 2rem;
         color: var(--primary-color);
     }
 
@@ -76,11 +76,11 @@ export default class NavBar extends Vue {
     }
 
     &__list-item {
-        padding-right: 2em;
+        padding-right: 2rem;
     }
 
     &__link {
-        font-size: 1.2em;
+        font-size: 1.2rem;
         
         &:hover {
             color: var(--primary-color);

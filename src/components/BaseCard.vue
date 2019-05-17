@@ -24,7 +24,7 @@ export default class BaseCard extends Vue {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .card {
     display: flex;
     align-items: center;
@@ -44,13 +44,13 @@ export default class BaseCard extends Vue {
     }
 
     &__icon {
-        width: 1.8em;
-        font-size: 5em;
+        font-size: 5rem;
+        width: 8rem;
     }
 
     &__heading {
         margin: 0;
-        font-size: 2em;
+        font-size: 2rem;
     }
 }
 </style>

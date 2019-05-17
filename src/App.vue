@@ -3,7 +3,11 @@
     <header>
       <NavBar />
     </header>
-    <router-view></router-view>
+    <main>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
+    </main>
   </div>
 </template>
 
@@ -20,26 +24,5 @@ import NavBar from '@/components/NavBar.vue';
 export default class App extends Vue {}
 </script>
 
-<style lang="scss">
-:root {
-  --primary-color: #00e5ff;
-  --teal-color: #67c5c2;
-  --secondary-color: #9f9f9f;
-  --dark-mode-bg: #607d8b;
-  --dark-mode-text: #fff;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  font-family: 'Quicksand', sans-serif;
-  color: var(--dark-mode-text);
-  background-color: var(--dark-mode-bg);
-}
-
-a {
-  text-decoration: none;
-  color: var(--dark-mode-text);
-}
-</style>
+<style lang="scss" src="@/styles/main.scss" />
 
