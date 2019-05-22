@@ -5,18 +5,18 @@ import Home from './views/Home.vue';
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
   base: process.env.BASE_URL,
+  mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'home',
       component: Home,
+      name: 'home',
+      path: '/',
     },
     {
-      path: '/projects/mesh',
-      name: 'mesh',
       component: () => import(/* webpackChunkName: "mesh" */ './views/projects/Mesh.vue'),
+      name: 'mesh',
+      path: '/projects/mesh',
     },
   ],
 });

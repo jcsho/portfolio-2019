@@ -20,12 +20,16 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue} from 'vue-property-decorator';
 import NavLink from '@/components/NavLink.vue';
+import { Component, Vue} from 'vue-property-decorator';
 
+/** Link to external domains */
 type ExternalLink = {
+    /** URI to redirect to */
     url: string,
+    /** Font awesome icon to use */
     icon: string,
+    /** Target to open, _blank or preventing redirect, etc */
     target: string
 };
 
@@ -35,21 +39,22 @@ type ExternalLink = {
     }
 })
 export default class NavBar extends Vue {
-    private links: ExternalLink[] = [
+    /** List of relevant links for personal work / social media */
+    public _links: ExternalLink[] = [
         {
-            url: 'mailto:justinhodev@gmail.com',
             icon: 'fas fa-envelope',
-            target: ''
+            target: '',
+            url: 'mailto:justinhodev@gmail.com',
         },
         {
-            url: 'https://github.com/justinhodev',
             icon: 'fab fa-github',
-            target: '_blank'
+            target: '_blank',
+            url: 'https://github.com/justinhodev',
         },
         {
-            url: 'https://linkedin.com/in/justin-ho-dev',
             icon: 'fab fa-linkedin-in',
-            target: '_blank'
+            target: '_blank',
+            url: 'https://linkedin.com/in/justin-ho-dev',
         },
     ];
 }

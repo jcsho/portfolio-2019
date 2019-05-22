@@ -12,9 +12,9 @@
 </template>
 
 <script lang="ts">
+import NavBar from '@/components/NavBar.vue';
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
-import NavBar from '@/components/NavBar.vue';
 
 @Component({
   components: {
