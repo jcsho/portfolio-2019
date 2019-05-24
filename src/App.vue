@@ -8,17 +8,19 @@
         <router-view></router-view>
       </transition>
     </main>
+    <Footer />
   </div>
 </template>
 
 <script lang="ts">
 import NavBar from '@/components/NavBar.vue';
-import Vue from 'vue';
-import { Component } from 'vue-property-decorator';
+import Footer from '@/components/Footer.vue';
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
   components: {
-    NavBar
+    NavBar,
+    Footer,
   }
 })
 export default class App extends Vue {}
