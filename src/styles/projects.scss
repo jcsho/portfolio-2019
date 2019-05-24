@@ -1,18 +1,20 @@
 .project {
-  padding: 10vh 25vw;
+  padding: 2vh 8vw;
   line-height: 2rem;
 
-  &__landing {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  &__title {
+    margin: 2rem 0;
+    font-size: 2.8rem;
+    letter-spacing: 0.4rem;
   }
 
-  &__title {
-    margin: 0 2rem;
-    font-size: 3rem;
-    letter-spacing: 0.8rem;
+  &__image {
+    width: 80vw;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
   }
 
   &__heading {
@@ -22,13 +24,68 @@
   }
 
   &__subheading {
-    margin: 1rem 0 0 1rem;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
   }
 
   &__text {
-    margin: 0 2rem;
     letter-spacing: 0.1rem;
+  }
+
+
+  &__list-item {
+    display: list-item;
+    margin: 0 1rem;
+    list-style-type: square;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .project {
+    padding: 10vh 24vw 10vh 25vw;
+
+    &__title {
+      letter-spacing: 2rem;
+    }
+
+    &__image {
+      width: 50vw;
+      margin: 2rem 0 0 0;
+
+      &--half {
+        width: 20vw;
+        margin: 1rem 1rem 0 0;
+      }
+    }
+
+    &__video {
+      width: 50vw;
+      height: 53vh;
+      margin: 1rem 0;
+    }
+
+    &__caption {
+      margin-left: 1rem;
+      font-size: 0.95rem;
+    }
+
+    &__info {
+      margin: 3rem;
+      flex-direction: row;
+    }
+
+    &__list {
+      margin: 0 3rem;
+    }
+
+    &__heading {
+      margin-top: 6rem;
+    }
+
+    &__subheading {
+      margin-top: 4rem;
+      margin-bottom: 0;
+    }
+
   }
 }

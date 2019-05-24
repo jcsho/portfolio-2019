@@ -36,21 +36,42 @@ export default class BaseCard extends Vue {
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-left: 35vw;
+        margin-left: 10vw;
+        margin-right: 2vw;
+        transition: color 0.1s ease-in;
 
         &:hover {
-            color: var(--primary-color);
+            color: var(--teal-color);
         }
     }
 
     &__icon {
-        font-size: 5rem;
-        width: 8rem;
+        font-size: 2rem;
+        width: 4rem;
     }
 
     &__heading {
         margin: 0;
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    .card {
+
+        &__link {
+            margin-left: 38vw;
+        }
+
+        &__icon {
+            font-size: 5rem;
+            width: 8rem;
+        }
+
+        &__heading {
+            font-size: 2rem;
+            width: 18vw;
+        }
     }
 }
 </style>
