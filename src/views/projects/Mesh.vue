@@ -8,11 +8,7 @@
       alt="Final Prototype of Mesh"
     >
 
-    <Button
-      link="https://drive.google.com/drive/folders/13BCeZ3rq0o5FiYMtpHGPKnA5K7-Qlnco?usp=sharing"
-      icon="fas fa-external-link-alt"
-      text="See Full Project"
-    />
+    <Button :prop="$data._externalLink" />
 
     <section class="project__info">
       <dl class="project__list">
@@ -100,7 +96,7 @@
 </template>
 
 <script lang="ts">
-import Button from '@/components/Button.vue';
+import Button, { ButtonProp } from '@/components/Button.vue';
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component({
@@ -108,7 +104,15 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
     Button,
   },
 })
-export default class Mesh extends Vue {}
+export default class Mesh extends Vue {
+
+  _externalLink: ButtonProp = {
+    icon: "fas fa-external-link-alt",
+    link: "https://drive.google.com/drive/folders/13BCeZ3rq0o5FiYMtpHGPKnA5K7-Qlnco?usp=sharing",
+    text: "See Full Project",
+  }
+
+}
 </script>
 
 <style lang="scss" src="@/styles/projects.scss" />

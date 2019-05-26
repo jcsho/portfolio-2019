@@ -1,18 +1,23 @@
 <template>
-    <a class="btn" :href="link">
-        {{ text }}
-        <i class="btn__icon" :class="icon"></i>
+    <a class="btn" :href="prop.link">
+        {{ prop.text }}
+        <i class="btn__icon" :class="prop.icon"></i>
     </a>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
+export interface ButtonProp {
+    icon: string;
+    link: string;
+    text: string;
+};
+
 @Component
-export default class Button extends Vue{
-    @Prop() link?: string;
-    @Prop() icon?: string;
-    @Prop() text?: string;
+export default class Button extends Vue {
+    @Prop({ type: Object as () => ButtonProp })
+    public prop!: ButtonProp;
 }
 </script>
 
