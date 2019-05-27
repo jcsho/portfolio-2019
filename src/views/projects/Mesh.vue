@@ -106,11 +106,11 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 })
 export default class Mesh extends Vue {
 
-  _externalLink: ButtonProp = {
-    icon: "fas fa-external-link-alt",
-    link: "https://drive.google.com/drive/folders/13BCeZ3rq0o5FiYMtpHGPKnA5K7-Qlnco?usp=sharing",
-    text: "See Full Project",
-  }
+  public _externalLink: ButtonProp = {
+    icon: 'fas fa-external-link-alt',
+    link: 'https://drive.google.com/drive/folders/13BCeZ3rq0o5FiYMtpHGPKnA5K7-Qlnco?usp=sharing',
+    text: 'See Full Project',
+  };
 
 }
 </script>
