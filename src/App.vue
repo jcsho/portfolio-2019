@@ -1,39 +1,30 @@
 <template>
-  <v-app>
-    <v-toolbar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>fas fa-external-link-alt</v-icon>
-      </v-btn>
-    </v-toolbar>
-
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+  <div id="app">
+    <header>
+      <NavBar />
+    </header>
+    <main>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
+    </main>
+    <Footer />
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld'
+<script lang="ts">
+import Footer from '@/components/Footer.vue';
+import NavBar from '@/components/NavBar.vue';
+import { Component, Vue } from 'vue-property-decorator';
 
-export default {
-  name: 'App',
+@Component({
   components: {
-    HelloWorld
-  },
-  data () {
-    return {
-      //
-    }
+    Footer,
+    NavBar,
   }
-}
+})
+export default class App extends Vue {}
 </script>
+
+<style lang="scss" src="@/styles/main.scss" />
+

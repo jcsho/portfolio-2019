@@ -13,9 +13,16 @@
     "quotemark": [true, "single"],
     "indent": [true, "spaces", 4],
     "interface-name": false,
-    "ordered-imports": false,
-    "object-literal-sort-keys": false,
-    "no-consecutive-blank-lines": false,
-    "trailing-comma": false
+    "ordered-imports": true,
+    "object-literal-sort-keys": true,
+    "no-consecutive-blank-lines": true,
+    "trailing-comma": false,
+    "interface-over-type-literal": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore"
+    ]
   }
 }
