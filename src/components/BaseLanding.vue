@@ -19,7 +19,7 @@ export default class BaseLanding extends Vue {
 .landing {
   display: flex;
   width: 100vw;
-  height: 50vh;
+  height: 30vh;
   justify-content: center;
   align-items: center;
 

@@ -59,9 +59,7 @@ export default class BaseCard extends Vue {
 @media only screen and (min-width: 1300px) {
     .card {
 
-        &__link {
-            margin-left: 38vw;
-        }
+        width: 35vw;
 
         &__icon {
             font-size: 5rem;

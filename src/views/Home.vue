@@ -3,13 +3,16 @@
     <BaseLanding 
       :heroText="$data._message"
     />
-    <BaseCard 
-      v-for="project in $data._projects" 
-      :key="project.id" 
-      :link="project.link" 
-      :icon="project.icon"
-      :title="project.name"
-    />
+
+    <div class="square">
+      <BaseCard 
+        v-for="project in $data._projects" 
+        :key="project.id" 
+        :link="project.link" 
+        :icon="project.icon"
+        :title="project.name"
+      />
+    </div>
   </section>
 </template>
 
@@ -36,7 +39,7 @@ type Project = {
 })
 export default class Home extends Vue {
   /** Text displayed as hero image on landing */
-  public _message: string = 'I Enjoy Transforming Digital Experiences';
+  public _message: string = 'I Design User Centric Digital Experiences';
 
   /** Projects to be passed as props on home page */
   public _projects: Project[] = [
@@ -57,11 +60,25 @@ export default class Home extends Vue {
     },
     {
       icon: 'fas fa-vr-cardboard',
-      link: { name: 'virtuallysavinglives'},
+      link: { name: 'virtually-saving-lives'},
       name: 'Virtually Saving Lives'
     },
   ];
-
-
 }
 </script>
+
+<style lang="scss">
+.square {
+  display: block;
+}
+
+@media only screen and (min-width: 1300px) {
+  .square {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+</style>
+

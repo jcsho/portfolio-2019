@@ -6,6 +6,10 @@
     margin: 2rem 0;
     font-size: 2.8rem;
     letter-spacing: 0.4rem;
+
+    &--close {
+      letter-spacing: 0.4rem;
+    }
   }
 
   &__image {
@@ -38,6 +42,20 @@
     margin: 0 1rem;
     list-style-type: square;
   }
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem 0;
+
+    &--spaced {
+      justify-content: space-around;
+    }
+
+    &--center {
+      justify-content: center;
+    }
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -46,6 +64,9 @@
 
     &__title {
       letter-spacing: 2rem;
+      &--close {
+        letter-spacing: 0.4rem;
+      }
     }
 
     &__image {
@@ -70,8 +91,9 @@
     }
 
     &__info {
-      margin: 3rem;
       flex-direction: row;
+      justify-content: space-around;
+      margin: 3rem 0;
     }
 
     &__list {
@@ -86,6 +108,5 @@
       margin-top: 4rem;
       margin-bottom: 0;
     }
-
   }
 }

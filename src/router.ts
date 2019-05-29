@@ -18,5 +18,20 @@ export default new Router({
       name: 'mesh',
       path: '/projects/mesh',
     },
+    {
+      component: () => import(/* webpackChunkName: "hypetracker" */ './views/projects/HypeTracker.vue'),
+      name: 'hypetracker',
+      path: '/projects/hypetracker',
+    },
+    {
+      component: () => import(/* webpackChunkName: "vsl" */ './views/projects/VSL.vue'),
+      name: 'virtually-saving-lives',
+      path: '/projects/virtually-saving-lives',
+    },
+    {
+      component: () => import(/* webpackChunkName: "nycrime" */ './views/projects/NYCrime.vue'),
+      name: 'nycrime',
+      path: '/projects/nycrime',
+    },
   ],
 });
