@@ -19,3 +19,9 @@ personal portfolio to showcase project work. [see it here](justinho.studio)
   - scroll to top button
   - animtations
   - finish project content
+  
+## Performance
+![Lighthouse Audit Score](https://www.dropbox.com/s/rd96blbe9quqaap/portfolio-audit-v0.1.png?raw=1)
+
+## License
+[MIT](https://github.com/justinhodev/portfolio/blob/master/LICENSE)
