@@ -4,6 +4,8 @@ node_js:
 branches:
   only:
     - master
+notifications:
+  email: false
 before_script:
   - npm install -g @vue/cli
 install:
@@ -15,6 +17,8 @@ script:
   - npm run lint
   - npm run test:unit
   - npm run build
+after_script:
+  - cat ./coverage/lcov.info | coveralls
 deploy:
   provider: firebase
   skip_cleanup: true
