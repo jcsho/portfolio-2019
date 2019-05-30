@@ -11,32 +11,15 @@ install:
 cache:
   directories:
     - node_modules
-stages:
-  - lint
-  - test
-  - build
-  - deploy
-    if: branch = master
-jobs:
-  include:
-    - stage: lint
-      script:
-        - npm run lint
-    - stage: test
-      name: unit
-      script:
-        - npm run test:unit
-    - stage: build
-      script:
-        - npm run serve
-    - stage: deploy
-      script:
-        - npm run serve
-      deploy:
-        provider: firebase
-        skip_cleanup: true
-        token: $FIREBASE_TOKEN
-        message: "Deployed from Travis CI"
-        local_dir: dist/
-        on:
-          branch: master
+script:
+  - npm run lint
+  - npm run test:unit
+  - npm run build
+deploy:
+  provider: firebase
+  skip_cleanup: true
+  token: $FIREBASE_TOKEN
+  message: "Deployed from Travis CI"
+  local_dir: dist/
+  on:
+    branch: master
