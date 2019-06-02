@@ -1,5 +1,5 @@
 <template>
-    <a class="btn" :href="prop.link" target="_blank">{{ prop.text }}<i class="btn__icon" :class="prop.icon"></i></a>
+    <a class="btn" :href="prop.link" target="_blank" rel="noopener noreferrer">{{ prop.text }}<i class="btn__icon" :class="prop.icon"></i></a>
 </template>
 
 <script lang="ts">

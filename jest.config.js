@@ -39,4 +39,5 @@ module.exports = {
     'src/components/**/*.vue',
   ],
   coverageDirectory: 'coverage',
+  coverageReporters: ['lcov', 'text-summary']
 }

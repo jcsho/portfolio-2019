@@ -1,5 +1,5 @@
 <template>
-  <a :href="prop.link" target="_blank" class="nav-link">
+  <a :href="prop.link" target="_blank" class="nav-link" rel="noopener noreferrer">
     <i v-if="prop.icon !== ''" :class="prop.icon"></i>
     {{ prop.text }}
   </a>
