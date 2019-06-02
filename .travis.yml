@@ -1,6 +1,10 @@
 language: node_js
 node_js:
   - lts/*
+addons:
+  apt:
+    packages:
+      - libgconf-2-4 # Cypress dependency
 branches:
   only:
     - master
@@ -13,6 +17,7 @@ install:
 cache:
   directories:
     - node_modules
+    - ~/.cache # Cypress binary
 script:
   - npm run lint
   - npm run test:unit
