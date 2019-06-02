@@ -2,6 +2,7 @@
 ![Travis (.org)](https://img.shields.io/travis/justinhodev/portfolio.svg)
 [![Dependencies](http://img.shields.io/david/justinhodev/portfolio.svg)](https://david-dm.org/justinhodev/portfolio)
 [![GitHub release](https://img.shields.io/github/release/justinhodev/portfolio.svg)](https://github.com/justinhodev/portfolio/releases)
+[![Coverage Status](https://coveralls.io/repos/github/justinhodev/portfolio/badge.svg?branch=master)](https://coveralls.io/github/justinhodev/portfolio?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/justinhodev/portfolio/badge.svg)](https://snyk.io/test/github/justinhodev/portfolio)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/justinhodev/portfolio/blob/master/LICENSE)
 
