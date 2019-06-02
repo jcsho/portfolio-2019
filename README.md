@@ -15,11 +15,7 @@ personal portfolio to showcase project work. [see it here](justinho.studio)
 - [Jest](https://jestjs.io/) - easiest to setup as I am still learning about [TDD](https://en.wikipedia.org/wiki/Test-driven_development), Mocha + Chai had some issues setting up coverage with Vue files
 
 ## Roadmap
-- current release (v0.1) is barebones and has lots to improve, but this isn't meant to be perfect so I wanted to document the first working step
-- features to add
-  - scroll to top button
-  - animtations
-  - finish project content
+[see Project](https://github.com/justinhodev/portfolio/projects/1)
   
 ## Performance
 ![Lighthouse Audit Score](https://www.dropbox.com/s/rd96blbe9quqaap/portfolio-audit-v0.1.png?raw=1)
