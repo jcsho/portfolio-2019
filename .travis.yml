@@ -50,7 +50,7 @@ jobs:
       deploy:
         provider: pages
         skip_cleanup: true
-        token: $GITHUB_TOKEN
+        github_token: $GITHUB_TOKEN
         target_branch: gh-pages
         local_dir: dist/
         on:
