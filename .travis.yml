@@ -1,35 +1,71 @@
 language: node_js
+
 node_js:
   - lts/*
+
 addons:
   apt:
     packages:
       - libgconf-2-4 # Cypress dependency
+
 branches:
   only:
     - master
     - development
+  except:
+    - documentation
+
 notifications:
   email: false
+
 before_script:
-  - npm install -g @vue/cli
+  - npm install -g @vue/cli && cypress install
+
 install:
   - npm install
+
 cache:
   directories:
     - node_modules
     - ~/.cache # Cypress binary
-script:
-  - npm run lint
-  - npm run test:unit
-  - npm run build
-after_script:
-  - cat ./coverage/lcov.info | coveralls
-deploy:
-  provider: firebase
-  skip_cleanup: true
-  token: $FIREBASE_TOKEN
-  message: "Deployed from Travis CI"
-  local_dir: dist/
-  on:
-    branch: master
+
+stages:
+  - test
+  - deploy
+
+jobs:
+  include:
+    - stage: test
+      name: "Unit Tests"
+      script:
+        - npm run test:unit
+    - name: "Integration Tests"
+      script:
+        - npm run test:e2e -- --headless
+    - stage: deploy
+    - if: branch = development
+      name: "Deploy to Github Pages"
+      script:
+        - npm run build
+      deploy:
+        provider: pages
+        skip_cleanup: true
+        github_token: $GITHUB_TOKEN
+        target_branch: gh-pages
+        local_dir: dist/
+        on:
+          branch: development
+    - if: branch = master
+      name: "Deploy to Firebase"
+      script:
+        - npm run build
+      after_script:
+        - cat ./coverage/lcov.info | coveralls
+      deploy:
+        provider: firebase
+        skip_cleanup: true
+        token: $FIREBASE_TOKEN
+        message: "Deployed from Travis CI"
+        local_dir: dist/
+        on:
+          branch: master
