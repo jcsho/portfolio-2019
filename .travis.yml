@@ -12,6 +12,8 @@ branches:
   only:
     - master
     - development
+  except:
+    - documentation
 
 notifications:
   email: false
