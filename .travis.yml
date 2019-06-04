@@ -19,7 +19,7 @@ notifications:
   email: false
 
 before_script:
-  - npm install -g @vue/cli
+  - npm install -g @vue/cli && cypress install
 
 install:
   - npm install
