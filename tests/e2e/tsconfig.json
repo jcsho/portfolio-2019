@@ -2,8 +2,15 @@
   "extends": "../../tsconfig.json",
   "compilerOptions": {
     "baseUrl": "../../node_modules",
-    "target": "es5",
-    "types": ["cypress"]
+    "target": "es6",
+    "lib": [
+      "dom",
+      "es6"
+    ],
+    "types": [
+      "cypress",
+      "node"
+    ]
   },
   "include": [
     "**/*.ts"

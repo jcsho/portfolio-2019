@@ -1,8 +1,11 @@
 // https://docs.cypress.io/api/introduction/api.html
 
+type Url = string;
+
 describe('My Portfolio Site', () => {
   it('Visit the app root url', () => {
-    cy.visit('/');
+    const url: Url = '/';
+    cy.visit(url);
     cy.contains('h1', 'Justin Ho');
   });
 
