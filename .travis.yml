@@ -43,6 +43,7 @@ jobs:
       script:
         - npm run test:e2e -- --headless
     - stage: deploy
+    - if: branch = master
       name: "Deploy to Firebase"
       script:
         - npm run build
