@@ -3,6 +3,7 @@ import { shallowMount } from '@vue/test-utils';
 
 const btnProp = {
     icon: 'fas fa-external',
+    label: 'test-btn',
     link: '/',
     text: 'Testing'
 };
@@ -27,13 +28,18 @@ describe('Button Component', () => {
         expect(wrapper.attributes('href')).toBe(btnProp.link);
     });
 
-    it ('meets CORS rules for links', () => {
+    it('meets CORS rules for links', () => {
         const wrapper = mountFactory(btnProp);
         expect(wrapper.attributes('rel')).toBe('noopener noreferrer');
     });
 
-    it ('mounts with props text', () => {
+    it('mounts with props text', () => {
         const wrapper = mountFactory(btnProp);
         expect(wrapper.text()).toBe(btnProp.text);
+    });
+
+    it('has an aria-label for accessibility', () => {
+        const wrapper = mountFactory(btnProp);
+        expect(wrapper.attributes('aria-label')).toBeDefined();
     });
 });
