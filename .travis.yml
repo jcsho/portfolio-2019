@@ -19,7 +19,7 @@ notifications:
   email: false
 
 before_script:
-  - npm install -g @vue/cli && cypress install
+  - npm install -g @vue/cli # for vue-cli-service
 
 install:
   - npm install
@@ -40,6 +40,8 @@ jobs:
       script:
         - npm run test:unit
     - name: "Integration Tests"
+      before_script:
+        - cypress install # add cypress binaries back in as its not found for some reason
       script:
         - npm run test:e2e -- --headless
     - stage: deploy
@@ -59,7 +61,7 @@ jobs:
           branch: development
     - if: branch = master
       env:
-        - BASE_URL="/""
+        - BASE_URL="/" # change to root for firebase
       name: "Deploy to Firebase"
       script:
         - npm run build
