@@ -44,6 +44,8 @@ jobs:
         - npm run test:e2e -- --headless
     - stage: deploy
     - if: branch = development
+      env:
+        - BASE_URL="/portfolio/" # github repo name, see https://cli.vuejs.org/guide/deployment.html#github-pages
       name: "Deploy to Github Pages"
       script:
         - npm run build
@@ -56,6 +58,8 @@ jobs:
         on:
           branch: development
     - if: branch = master
+      env:
+        - BASE_URL="/""
       name: "Deploy to Firebase"
       script:
         - npm run build
