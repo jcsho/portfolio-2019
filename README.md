@@ -17,7 +17,7 @@
   :star: A personal portfolio site to showcase my UX case studies and process work. :star:
 </p>
 
-# Table of Contens
+# Table of Contents
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Technology Stack](#tech_stack)
