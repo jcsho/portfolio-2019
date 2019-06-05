@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://justinho.studio" rel="noreferrer noopener" target="_blank">
-    <img height=150px width=300px src="https://www.dropbox.com/s/5macqgrd1qesgw2/social-preview-mini.png?raw=1" alt="Logo">
+    <img height=200px width=400px src="https://www.dropbox.com/s/5macqgrd1qesgw2/social-preview-mini.png?raw=1" alt="Logo">
   </a>
 </p>
 
@@ -20,14 +20,13 @@
 # Table of Contens
 - [About](#about)
 - [Getting Started](#getting_started)
-- [Deployment](#deployment)
 - [Technology Stack](#tech_stack)
 - [Roadmap](https://github.com/justinhodev/portfolio/projects/1)
 
 ## About <a name="about"></a>
 This is a personal site built with the accumulation of my case studies and working projects.
 
-## Getting Started
+## Getting Started <a name="getting_started"></a>
 If you want to take my website as a template to build your own feel free to follow below. :point_down:
 
 ### Prerequisites
