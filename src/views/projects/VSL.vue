@@ -2,7 +2,7 @@
   <section class="project">
     <figure class="hero">
         <h1 class="hero__text">virtually saving lives</h1>
-        <img src="@/assets/vsl-logo-compressed.png" alt class="hero__image">
+        <img src="@/assets/vsl-logo-min.png" alt class="hero__image">
     </figure>
 
     <section class="project__info">

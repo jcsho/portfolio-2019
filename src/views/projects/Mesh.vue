@@ -87,12 +87,12 @@
 
     <figure>
       <img
-        src="@/assets/merging-sketch-1-compressed.jpg"
+        src="@/assets/merging-sketch-1-compressed.png"
         alt
         class="project__image project__image--half"
       >
       <img
-        src="@/assets/merging-sketch-2-compressed.jpg"
+        src="@/assets/merging-sketch-2-compressed.png"
         alt
         class="project__image project__image--half"
       >
