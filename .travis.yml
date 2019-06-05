@@ -39,6 +39,8 @@ jobs:
       name: "Unit Tests"
       script:
         - npm run test:unit
+      after_script:
+        - cat ./coverage/lcov.info | coveralls # send coverage data to coveralls
     - name: "Integration Tests"
       before_script:
         - cypress install # add cypress binaries back in as its not found for some reason
@@ -65,8 +67,6 @@ jobs:
       name: "Deploy to Firebase"
       script:
         - npm run build
-      after_script:
-        - cat ./coverage/lcov.info | coveralls
       deploy:
         provider: firebase
         skip_cleanup: true
