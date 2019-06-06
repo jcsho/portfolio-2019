@@ -2,11 +2,7 @@
   <section class="project">
     <h1 class="project__title">mesh</h1>
 
-    <img
-      class="project__image"
-      src="@/assets/mesh-icon-compressed.png"
-      alt=""
-    >
+    <img class="project__image" src="@/assets/mesh-icon-compressed.png" alt>
 
     <section class="project__info">
       <dl class="project__list">
@@ -133,8 +129,8 @@
 </template>
 
 <script lang="ts">
-import Button, { ButtonProp } from '@/components/Button.vue';
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import Button, { ButtonProp } from "@/components/Button.vue";
+import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component({
   components: {
@@ -143,10 +139,11 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 })
 export default class Mesh extends Vue {
   public _externalLink: ButtonProp = {
-    icon: 'fas fa-external-link-alt',
+    icon: "fas fa-external-link-alt",
     link:
-      'https://drive.google.com/drive/folders/13BCeZ3rq0o5FiYMtpHGPKnA5K7-Qlnco?usp=sharing',
-    text: 'See Full Project'
+      "https://drive.google.com/drive/folders/13BCeZ3rq0o5FiYMtpHGPKnA5K7-Qlnco?usp=sharing",
+    label: 'Link to project files',
+    text: "See Full Project"
   };
 }
 </script>

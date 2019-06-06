@@ -51,6 +51,7 @@ export default class HypeTracker extends Vue {
     public _externalLink: ButtonProp = {
         icon: 'fas fa-external-link-alt',
         link: 'https://github.com/justinhodev/hype-tracker',
+        label: 'Link to github repository',
         text: 'See Github Repo',
     };
 }

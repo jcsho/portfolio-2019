@@ -39,11 +39,13 @@ export default class NYCrime extends Vue {
         {
         icon: 'fas fa-external-link-alt',
         link: 'https://justinhodev.github.io/nyc-data-visualization/',
+        label: 'Link to visualization project',
         text: 'See It Live'
         },
         {
         icon: 'fas fa-external-link-alt',
         link: 'https://drive.google.com/open?id=1zczRp2KWCvj8GW2Cip8vmt4tj424Nl0xPJUhiA7tolg',
+        label: 'Link to report of project',
         text: 'See Full Report'
         },
     ];
