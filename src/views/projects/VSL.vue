@@ -45,6 +45,7 @@ export default class VSL extends Vue {
     public _externalLink: ButtonProp = {
         icon: 'fas fa-external-link-alt',
         link: 'https://www.dropbox.com/s/ws6jkyzjiqn99sg/VSL_Final_Report.pdf?dl=0',
+        label: 'Link to full report of the project',
         text: 'See Full Report'
     };
 }
