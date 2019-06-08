@@ -50,8 +50,8 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 export default class HypeTracker extends Vue {
     public _externalLink: ButtonProp = {
         icon: 'fas fa-external-link-alt',
-        link: 'https://github.com/justinhodev/hype-tracker',
         label: 'Link to github repository',
+        link: 'https://github.com/justinhodev/hype-tracker',
         text: 'See Github Repo',
     };
 }

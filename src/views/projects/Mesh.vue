@@ -129,8 +129,8 @@
 </template>
 
 <script lang="ts">
-import Button, { ButtonProp } from "@/components/Button.vue";
-import { Component, Prop, Vue } from "vue-property-decorator";
+import Button, { ButtonProp } from '@/components/Button.vue';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 
 @Component({
   components: {
@@ -139,11 +139,11 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 })
 export default class Mesh extends Vue {
   public _externalLink: ButtonProp = {
-    icon: "fas fa-external-link-alt",
-    link:
-      "https://drive.google.com/drive/folders/13BCeZ3rq0o5FiYMtpHGPKnA5K7-Qlnco?usp=sharing",
+    icon: 'fas fa-external-link-alt',
     label: 'Link to project files',
-    text: "See Full Project"
+    link:
+      'https://drive.google.com/drive/folders/13BCeZ3rq0o5FiYMtpHGPKnA5K7-Qlnco?usp=sharing',
+    text: 'See Full Project'
   };
 }
 </script>
