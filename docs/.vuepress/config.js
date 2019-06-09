@@ -6,7 +6,7 @@ module.exports = {
       }
     }
   },
-  title: 'Design - Justin Ho',
+  title: 'Teal Design',
   description: 'Personal Playground and Design System',
   head: [
     ['link', {rel: 'icon', href: '/favicon.ico'}]
@@ -17,7 +17,20 @@ module.exports = {
     docsDir: 'docs',
     sidebar: [
       '/',
-      '/usage'
+      {
+        title: 'styles',
+        children: [
+          '/styles/colors',
+          '/styles/typography',
+        ]
+      },
+      {
+        title: 'components',
+        children: [
+          '/components/button',
+          '/components/card'
+        ]
+      }
     ]
   }
 }
