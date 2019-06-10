@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #00e5ff;
+  --teal-color: #67c5c2;
+  --secondary-color: #9f9f9f;
+  --dark-mode-bg: #fefefe;
+  --dark-mode-text: #444;
+  // --dark-mode-bg: #607d8b;
+  // --dark-mode-text: #fff;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: var(--dark-mode-text);
+  background-color: var(--dark-mode-bg);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-mode-text);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+}
+
+figure {
+  margin: 0;
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
